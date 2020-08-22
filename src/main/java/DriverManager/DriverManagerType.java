@@ -2,9 +2,7 @@ package DriverManager;
 
 public enum DriverManagerType {
     ANDROID("AndroidDriver", "Init AndroidDiver"),
-    CHROME("ChromeDriver", "Init ChromeDriver"),
-    FIREFOX("firefoxdriver", "Init firefoxdriver"),
-    IE("iedriver", "Init iedriver");
+    IOS("IOSDriver", "Init IOS Driver");
 
     private String driverName;
     private String desc;

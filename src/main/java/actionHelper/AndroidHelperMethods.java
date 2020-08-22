@@ -41,7 +41,7 @@ public class AndroidHelperMethods {
         }
     }
 
-    public void WaittillVisible(MobileElement element){
+    public void WaitTillVisible(MobileElement element){
         new WebDriverWait(driver,15).until(ExpectedConditions.visibilityOf(element));
     }
 }
