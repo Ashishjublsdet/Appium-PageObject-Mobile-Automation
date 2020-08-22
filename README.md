@@ -12,7 +12,7 @@ git clone
 
 **3. Run appium desktop on default port**
 
-**4. Run test.xml**
+**4. Run testCase.xml**
 
 
 ## Project Structure
@@ -29,7 +29,7 @@ AndroidHelperMethods : All the common Android functions is present in this class
 DriverManagerType : We have create an enum for Driver types and its definations
 ```
 ```bash
-Webdrivers : In this class we are creating driver object on the Basis of DriverType  like DriverManagerType.Android,DriverManagerType.IOS
+DriverManager : In this class we are creating driver object on the Basis of DriverType  like DriverManagerType.Android,DriverManagerType.IOS
 ```
 ##### listners : In this package we are using TestNg ITestlistner for creating report on the basis of Test result
 
