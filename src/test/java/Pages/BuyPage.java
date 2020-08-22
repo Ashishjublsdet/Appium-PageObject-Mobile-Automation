@@ -40,7 +40,7 @@ public class BuyPage extends BasePageClass {
 
 
     public void enterAutoSearch(String localities) throws Exception {
-        androidHelperMethods.WaittillVisible(autoSearch);
+        androidHelperMethods.WaitTillVisible(autoSearch);
         androidHelperMethods.inputValuesSlowly(autoSearch, localities);
         androidDriver.hideKeyboard();
     }
