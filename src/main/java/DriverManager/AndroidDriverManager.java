@@ -24,6 +24,7 @@ public class AndroidDriverManager {
             String appPackage = properties.getProperty("appPackage");
             String appActivity = properties.getProperty("appActivity");
             String platformName = properties.getProperty("platformName");
+            String app = properties.getProperty("apkPath");
             String avd = properties.getProperty("avd");
             capabilities = new DesiredCapabilities();
             capabilities.setCapability("platformVersion", platformVersion);
@@ -33,6 +34,7 @@ public class AndroidDriverManager {
             capabilities.setCapability("platformName", platformName);
             capabilities.setCapability("avd", avd);
             capabilities.setCapability("autoGrantPermissions", "true");
+            capabilities.setCapability("app", System.getProperty("user.dir") + "//src//main//" + app);
             return driver = new AndroidDriver(new URL(nodeURL), capabilities);
 //                capabilities.setCapability("unicodeKeyboard", true);
 //                capabilities.setCapability("resetKeyboard", true);
