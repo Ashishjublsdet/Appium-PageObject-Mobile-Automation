@@ -12,7 +12,7 @@ git clone
 
 **3. Run appium desktop on default port**
 
-**4. Run test.xml**
+**4. Run testCase.xml**
 
 
 ## Project Structure
